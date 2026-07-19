@@ -6,7 +6,8 @@ colour choice.
 
 This is the editor colorscheme of the [hestia](https://github.com/dimitrios-git/hestia)
 Linux desktop, packaged standalone for people who want the theme without the
-project. Vim and Neovim render identically by construction.
+project. Vim and Neovim draw from one colour table — same palette, same
+highlight groups in both.
 
 ![hestia dark — Python and Rust](img/hero-dark.png)
 
@@ -16,10 +17,13 @@ project. Vim and Neovim render identically by construction.
 
 - **One file, both variants** — `set background=dark` or `light` before (or
   after) `colorscheme hestia`; the scheme follows `&background`.
-- **Vim and Neovim, identical** — Neovim's treesitter captures (`@keyword`,
-  `@function.call`, …) and LSP semantic tokens are linked to the same highlight
-  groups Vim uses, so the two editors agree token-for-token; diagnostics and
-  their underlines are mapped to the palette too.
+- **Vim and Neovim, one colour language** — Neovim's treesitter captures
+  (`@keyword`, `@function.call`, …) and LSP semantic tokens are linked to the
+  same highlight groups Vim's regex syntax uses, so what each colour *means*
+  can't drift between the editors; diagnostics and their underlines are mapped
+  to the palette too. (The two still tokenise differently — treesitter parses
+  where Vim pattern-matches — so token boundaries can differ in places, e.g.
+  markdown structure or `TODO` markers. The screenshots below are plain Vim.)
 - **Truecolor with an exact 256-colour fallback** — with `termguicolors` you
   get the exact palette; without it, hand-picked xterm-256 cells.
 - **Accessibility as a design rule** — every plain-text syntax foreground
