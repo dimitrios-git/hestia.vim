@@ -9,9 +9,9 @@ Linux desktop, packaged standalone for people who want the theme without the
 project. Vim and Neovim draw from one colour table — same palette, same
 highlight groups in both.
 
-![hestia dark — Python and Rust](img/hero-dark.png)
+![hestia dark — Python](img/hero-dark.png)
 
-![hestia light — Python and Rust](img/hero-light.png)
+![hestia light — Python](img/hero-light.png)
 
 ## Features
 
@@ -106,13 +106,6 @@ needs to scan). Each hue is lightness-tuned per variant until it clears AA.
 ## More languages
 
 <details>
-<summary><b>Python</b></summary>
-
-![Python, dark](img/py-dark.png)
-![Python, light](img/py-light.png)
-</details>
-
-<details>
 <summary><b>TypeScript</b></summary>
 
 ![TypeScript, dark](img/ts-dark.png)
@@ -168,8 +161,8 @@ needs to scan). Each hue is lightness-tuned per variant until it clears AA.
 </details>
 
 Screenshots are plain `vim` (no plugins) in [kitty](https://sw.kovidgoyal.net/kitty/)
-with Lilex Nerd Font, shot headlessly by hestia's screenshot rig on the hestia
-desktop, mesh wallpaper behind.
+with Lilex Nerd Font, shot headlessly by hestia's screenshot rig — just the
+terminal surface, no desktop chrome around it. (Python is up top.)
 
 ## Contributing — this file is generated
 
