@@ -4,10 +4,9 @@ A dark **and** light colorscheme for Vim and Neovim — violet accent, saturated
 brand-anchored syntax hues, and a WCAG-AA contrast discipline behind every
 colour choice.
 
-This is the editor colorscheme of the [hestia](https://github.com/dimitrios-git/hestia)
-Linux desktop, packaged standalone for people who want the theme without the
-project. Vim and Neovim draw from one colour table — same palette, same
-highlight groups in both.
+This is the editor colorscheme of the hestia Linux desktop, packaged standalone
+for people who want the theme without the project. Vim and Neovim draw from one
+colour table — same palette, same highlight groups in both.
 
 ![hestia dark — Python](img/hero-dark.png)
 
@@ -166,17 +165,19 @@ terminal surface, no desktop chrome around it. (Python is up top.)
 
 ## Contributing — this file is generated
 
-`colors/hestia.vim` is a **generated artifact**: it is rendered by
-[`themes/hestia/render.py`](https://github.com/dimitrios-git/hestia/tree/main/themes/hestia)
-from hestia's palette (`palette.yml`, the single source of truth for the whole
-desktop — terminal, bat, VS Code, web code blocks all render from the same
-tables) and mirrored here verbatim. The version of this repo tracks the palette
-version stamped in the file's first line.
+`colors/hestia.vim` is a **generated artifact**: it is rendered from hestia's
+palette (`palette.yml`, the single source of truth for the whole desktop —
+terminal, bat, VS Code, web code blocks all render from the same tables) and
+mirrored here verbatim. The version of this repo tracks the palette version
+stamped in the file's first line. The generator and its palette live in the
+hestia desktop repo, which is not public — so this repo is the colorscheme's
+public home, but not where it is authored.
 
-- **Bug reports and suggestions**: issues are welcome here.
-- **Colour changes**: land in hestia's `palette.yml`/`scopes.yml` and are
-  re-rendered — a PR editing `colors/hestia.vim` directly can't be merged,
-  since the next render would overwrite it.
+- **Bug reports and suggestions**: issues are welcome here — this is the right
+  place for them.
+- **Colour changes**: are made upstream in hestia's palette and re-rendered, so
+  a PR editing `colors/hestia.vim` directly can't be merged — the next render
+  would overwrite it. Open an issue describing the change instead.
 
 ## Attribution
 
@@ -185,8 +186,8 @@ version stamped in the file's first line.
   scheme preserves that lineage (with hestia's documented deviations: the
   violet accent, the Memphis-brand syntax re-anchor, AA-driven lifts).
 - Syntax hues from **thecodingidiot**'s Memphis brand accents.
-- Generated from the **[hestia](https://github.com/dimitrios-git/hestia)**
-  palette, where the design decisions (and their reasoning) are logged.
+- Generated from the **hestia** desktop's palette, where the design decisions
+  (and their reasoning) are logged.
 
 ## License
 
